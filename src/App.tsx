@@ -1,24 +1,30 @@
 export function App() {
   return (
     <>
-      <main className="flex justify-center items-center h-screen">
+      <main className="flex justify-center items-center h-screen bg-slate-900 ">
         <form
           action=""
-          className="flex flex-col justify-center items-center w-2/3 lg:w-1/4 bg-slate-900 text-white h-2/3 rounded"
+          className="flex flex-col justify-center items-center w-[80%] lg:w-1/4 bg-slate-800 text-white h-[50%] lg:h-2/3 max-w-[80%] rounded font-sans"
         >
-          <div className="w-1/1">
-            <label htmlFor="user__login" className="block border-b-2">
+          <div className="w-1/1 relative">
+            <label
+              htmlFor="user__login"
+              className="block before:content-[''] before:max-w-[23%] before:w-[100%] before:h-1 before:bg-[#ffffff] before:absolute  before:top-0 before:left-0 mt-1 "
+            >
               Login
             </label>
             <input
               type="text"
               id="user__login"
-              className="border border-slate-700 border rounded bg-slate-700 mt-3 w-1/1 py-1 pl-1"
+              className="border-slate-700 border rounded bg-slate-700 mt-3 w-1/1 py-1 pl-1"
             />
           </div>
 
-          <div className="w-1/1 mt-5">
-            <label htmlFor="user__password" className="block  border-b-2">
+          <div className="w-1/1 mt-5 relative">
+            <label
+              htmlFor="user__password"
+              className="block before:content-[''] before:max-w-[36%] before:w-[100%] before:h-1 before:bg-[#ffffff] before:absolute  before:top-0 before:left-0 mt-1 "
+            >
               Password
             </label>
             <input

@@ -8,8 +8,12 @@ export function App() {
           action=""
           className="flex flex-col justify-center items-center w-[80%] lg:w-1/4 bg-slate-800 text-white h-[50%] lg:h-2/3 max-w-[80%] rounded font-sans"
         >
-          <Input inputName={"Login"} inputType="text" />
-          <Input inputName={"Password"} inputType="password" />
+          <Input inputName={"Login"} inputType="text" htmlFor="Login" />
+          <Input
+            inputName={"Password"}
+            inputType="password"
+            htmlFor="Password"
+          />
 
           <input
             type="submit"

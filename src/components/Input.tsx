@@ -1,25 +1,15 @@
 interface Input {
-  inputName: string;
-  inputType: string;
-  htmlFor: string;
+  bgUrl: string;
 }
 
 export function Input(props: Input) {
   return (
     <>
-      <div className="w-1/1 relative mt-5   ">
-        <label
-          htmlFor={props.htmlFor}
-          className="block before:content-[''] before:max-w-[75px] before:w-[100%] before:h-1 before:bg-[#ffffff] before:absolute  before:top-0 before:left-0 mt-1 "
-        >
-          {props.inputName}
-        </label>
-        <input
-          type={props.inputType}
-          id={props.inputName}
-          className="border-slate-700 border rounded bg-slate-700 mt-3 w-1/1 py-1 pl-1"
-        />
-      </div>
+      <input
+        type="button"
+        value="Sign in With Github"
+        className={`shadow-lg mt-7 px-12 py-3 text-[0.9rem] cursor-pointer scale-100 hover:scale-110 ease-in duration-100 bg-[url('${props.bgUrl}')]  bg-no-repeat bg-contain bg-[center_left_1rem]`}
+      />
     </>
   );
 }

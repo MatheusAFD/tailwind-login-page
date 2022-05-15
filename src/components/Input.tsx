@@ -1,6 +1,6 @@
 interface Input {
-  inputName: String;
-  inputType: String;
+  inputName: string;
+  inputType: string;
 }
 
 export function Input(props: Input) {
